@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Womazing Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__logo">Womazing</div>
+      <nav class="header__nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="shop.html" class="nav__link">Магазин</a>
+        <a href="aboutbrand.html" class="nav__link">О бренде</a>
+        <a href="contacts.html" class="nav__link">Контакты</a>
+      </nav>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="header__phone">
+        <a href="tel:+74958235412">+7 (495) 823-54-12</a>
+      </div>
+      <div class="header__bag">
+        <a href="cart.html"><img src="images/cart.svg" alt="Корзина" /></a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="container__header">
+        <h1 class="heading--primary">Корзина</h1>
+        <div class="breadcrumbs">Главная — <span>Корзина</span></div>
+      </div>
+
+      <div class="cart-container">
+        <div class="cart-header">
+          <div>Товар</div>
+          <div>Цена</div>
+          <div>Количество</div>
+          <div class="header-total">Всего</div>
+        </div>
+
+        <div class="cart-item" data-item-id="1">
+          <button
+            class="remove-btn"
+            onclick="removeItem(1)"
+            title="Удалить товар"
+          >
+            ×
+          </button>
+
+          <div class="product-info">
+            <img
+              src="images/usa-girl.jpg"
+              alt="Футболка USA"
+              class="product-image"
+            />
+            <div class="product-details">
+              <h3>Футболка USA</h3>
+            </div>
+          </div>
+
+          <div class="product-price">2190 руб</div>
+
+          <div class="quantity-controls">
+            <button class="quantity-btn" onclick="decreaseQuantity(1)">
+              −
+            </button>
+            <input
+              type="number"
+              class="quantity-input"
+              value="1"
+              min="1"
+              id="quantity-1"
+              onchange="updateQuantity(1)"
+            />
+            <button class="quantity-btn" onclick="increaseQuantity(1)">
+              +
+            </button>
+          </div>
+
+          <div class="total-price" id="total-1">$129</div>
+
+          <!-- Мобильная версия -->
+          <div class="mobile-row" style="display: none">
+            <span class="mobile-label">Цена:</span>
+            <span class="product-price">$129</span>
+          </div>
+          <div class="mobile-row" style="display: none">
+            <span class="mobile-label">Всего:</span>
+            <span class="total-price">2190 руб</span>
+          </div>
+        </div>
+
+        <div class="cart-actions">
+          <div class="coupon-section">
+            <input
+              type="text"
+              class="coupon-input"
+              placeholder="Введите купон"
+            />
+            <button class="coupon-btn">Применить купон</button>
+            <button class="update-btn">Обновить корзину</button>
+          </div>
+
+          <div class="cart-summary">
+            <div class="summary-info">
+              <div class="subtotal">
+                Подытог: <span id="subtotal">2190 руб</span>
+              </div>
+              <div class="total">Итого: <span id="total">2190 руб</span></div>
+            </div>
+            <a href="checkout.html">
+              <button class="checkout-btn">Оформить заказ</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__nav">
+          <a href="index.html" class="nav__link">Главная</a>
+          <a href="shop.html" class="nav__link">Магазин</a>
+          <a href="aboutbrand.html" class="nav__link">О бренде</a>
+          <a href="contacts.html" class="nav__link">Контакты</a>
+        </div>
+        <div class="footer__info">
+          <p>© Все права защищены</p>
+          <div class="footer__socials">
+            <a href="#">
+              <img
+                src="images/facebook.png"
+                class="sotial_icon"
+                alt="Facebook"
+              />
+            </a>
+            <a href="#">
+              <img src="images/instagram.png" class="sotial_icon" alt="IG" />
+            </a>
+            <a href="#">
+              <img src="images/twitter.png" class="sotial_icon" alt="Twitter" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="burger.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>

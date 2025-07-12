@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Womazing Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="oneitem.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__logo">Womazing</div>
+      <nav class="header__nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="shop.html" class="nav__link">Магазин</a>
+        <a href="aboutbrand.html" class="nav__link">О бренде</a>
+        <a href="contacts.html" class="nav__link">Контакты</a>
+      </nav>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="header__phone">
+        <a href="tel:+74958235412">+7 (495) 823-54-12</a>
+      </div>
+      <div class="header__bag">
+        <a href="cart.html"><img src="images/cart.svg" alt="Корзина" /></a>
+      </div>
+    </header>
+
+    <main class="container">
+      <h2>Свитшот Sweet Shot</h2>
+      <div class="breadcrumbs">
+        Главная — Свитшоты — <span>Свитшот Sweet Shot</span>
+      </div>
+
+      <div class="item">
+        <img src="images/sweatshirt.jpg" class="item__image" alt="Sweatshirt" />
+        <div class="item__info">
+          <div class="price">
+            <p>1290 руб &nbsp;&nbsp; <s>2290 руб</s></p>
+          </div>
+          <div class="size">
+            <p>Выберите размер</p>
+            <div class="filter-buttons">
+              <button>S</button>
+              <button>M</button>
+              <button>L</button>
+              <button>XL</button>
+              <button>XXL</button>
+            </div>
+          </div>
+          <div class="color">
+            <p>Выберите цвет</p>
+            <button class="bazaar"></button>
+            <button class="lightgray"></button>
+            <button class="softred"></button>
+            <button class="apricot"></button>
+          </div>
+          <div class="btn btn--primary">
+            <a href="cart.html" class="btn btn--primary">Добавить в корзину</a>
+          </div>
+        </div>
+      </div>
+      <div class="related_products">
+        <h2>Связанные товары</h2>
+        <div class="related_products__items">
+          <div class="related_products__item">
+            <img src="images/usa-girl.jpg" alt="USA girl" />
+            <h3>Футболка USA</h3>
+            <p>1290 руб</p>
+          </div>
+
+          <div class="related_products__item">
+            <img src="images/sport-top.jpg" alt="Топ" />
+            <h3>Топ</h3>
+            <p>1290 руб</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__nav">
+          <a href="index.html" class="nav__link">Главная</a>
+          <a href="shop.html" class="nav__link">Магазин</a>
+          <a href="aboutbrand.html" class="nav__link">О бренде</a>
+          <a href="contacts.html" class="nav__link">Контакты</a>
+        </div>
+        <div class="footer__info">
+          <p>© Все права защищены</p>
+          <div class="footer__socials">
+            <a href="#">
+              <img
+                src="images/facebook.png"
+                class="sotial_icon"
+                alt="Facebook"
+              />
+            </a>
+            <a href="#">
+              <img src="images/instagram.png" class="sotial_icon" alt="IG" />
+            </a>
+            <a href="#">
+              <img src="images/twitter.png" class="sotial_icon" alt="Twitter" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="burger.js"></script>
+    <script src="cart-functionality.js"></script>
+  </body>
+</html>

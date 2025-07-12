@@ -1,0 +1,306 @@
+/* Базовые стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #fff;
+  color: #1e1e1e;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.header__nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #1e1e1e;
+  font-weight: 500;
+}
+
+.nav__link:hover {
+  color: #6e9c9f;
+  transition: 0.3s easy;
+}
+
+.header__phone a {
+  color: #1e1e1e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Burger */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  height: 2px;
+  background-color: #1e1e1e;
+  transition: 0.3s;
+}
+
+.burger--active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger--active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger--active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav--active {
+  display: flex !important;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs span {
+  color: #909090;
+}
+
+.map {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts {
+  padding-top: 130px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px;
+}
+
+a {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.form {
+  padding-top: 130px;
+}
+
+.contact-form {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+}
+
+.form-title {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-bottom: 3px solid #000000;
+  font-size: 16px;
+  font-family: inherit;
+  width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6e9c9f;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #6e9c9f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #5b878a;
+}
+
+/* Footer */
+.footer {
+  background-color: #f1eadc;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.footer__nav a {
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+.footer__nav a:hover {
+  color: #6e9c9f;
+  transition: 0.3s easy;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer__socials {
+  display: flex;
+}
+
+.footer__socials a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #6e9c9f;
+}
+
+.sotial_icon {
+  width: 22px;
+  height: 22px;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .header__nav {
+    display: none;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav__link {
+    text-align: left;
+    display: block;
+  }
+
+  .map iframe {
+    height: 300px;
+  }
+
+  .contacts table,
+  .contact-form {
+    font-size: 14px;
+  }
+
+  .form-title {
+    font-size: 20px;
+  }
+
+  .contacts th,
+  .contacts td {
+    padding: 8px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .footer__info {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

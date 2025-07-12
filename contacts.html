@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Womazing Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contacts.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__logo">Womazing</div>
+      <nav class="header__nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="shop.html" class="nav__link">Магазин</a>
+        <a href="aboutbrand.html" class="nav__link">О бренде</a>
+        <a href="contacts.html" class="nav__link">Контакты</a>
+      </nav>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="header__phone">
+        <a href="tel:+74958235412">+7 (495) 823-54-12</a>
+      </div>
+      <div class="header__bag">
+        <a href="cart.html"><img src="images/cart.svg" alt="Корзина" /></a>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="heading--primary">Контакты</h1>
+      <div class="breadcrumbs">Главная — <span>Контакты</span></div>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.2751453296087!2d37.53384807595434!3d55.68420399727379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf10fe7d1cd%3A0xec17e8e231b3598c!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDPQkSwgMjUsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTkyNjE!5e0!3m2!1sru!2skz!4v1752257408534!5m2!1sru!2skz"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="contacts">
+        <table>
+          <thead>
+            <tr>
+              <th>Телефон</th>
+              <th>E-mail</th>
+              <th>Адрес</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="tel:+74958235412">+7 (495) 823-54-12</a></td>
+              <td><a href="mailto:info@sitename.com">info@sitename.com</a></td>
+              <td>г. Москва, 3-я улица Строителей, 25</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="form">
+        <h2 class="form-title">Напишите нам</h2>
+        <form class="contact-form" action="#" method="post">
+          <input type="text" name="name" placeholder="Имя" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="tel" name="phone" placeholder="Телефон" />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Сообщение"
+            required
+          ></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__nav">
+          <a href="index.html" class="nav__link">Главная</a>
+          <a href="shop.html" class="nav__link">Магазин</a>
+          <a href="aboutbrand.html" class="nav__link">О бренде</a>
+          <a href="contacts.html" class="nav__link">Контакты</a>
+        </div>
+        <div class="footer__info">
+          <p>© Все права защищены</p>
+          <div class="footer__socials">
+            <a href="#">
+              <img
+                src="images/facebook.png"
+                class="sotial_icon"
+                alt="Facebook"
+              />
+            </a>
+            <a href="#">
+              <img src="images/instagram.png" class="sotial_icon" alt="IG" />
+            </a>
+            <a href="#">
+              <img src="images/twitter.png" class="sotial_icon" alt="Twitter" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="burger.js"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Womazing Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__logo">Womazing</div>
+      <nav class="header__nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="shop.html" class="nav__link">Магазин</a>
+        <a href="aboutbrand.html" class="nav__link">О бренде</a>
+        <a href="contacts.html" class="nav__link">Контакты</a>
+      </nav>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="header__phone">
+        <a href="tel:+74958235412">+7 (495) 823-54-12</a>
+      </div>
+      <div class="header__bag">
+        <a href="cart.html"><img src="images/cart.svg" alt="Корзина" /></a>
+      </div>
+    </header>
+
+    <main class="container">
+      <h2>Магазин</h2>
+      <div class="breadcrumbs">Главная — <span>Магазин</span></div>
+
+      <div class="filter-buttons">
+        <button>Все</button>
+        <button>Футболки</button>
+        <button>Свитшоты</button>
+        <button>Накидки</button>
+      </div>
+
+      <div class="products">
+        <!-- Repeat block -->
+        <div class="product">
+          <a href="oneitem.html">
+            <img src="images/usa-girl.jpg" alt="Футболка USA" />
+          </a>
+          <div class="product-name">Футболка USA</div>
+        </div>
+
+        <div class="product">
+          <a href="oneitem.html">
+            <img src="images/sport-top.jpg" alt="Топ" />
+          </a>
+          <div class="product-name">Куртка в клетку</div>
+        </div>
+
+        <div class="product">
+          <a href="oneitem.html">
+            <img src="images/sweatshirt.jpg" alt="Свитшот Sweet Shot" />
+          </a>
+          <div class="product-name">Свитшот Sweet Shot</div>
+        </div>
+
+        <!-- Повторить 2 раза -->
+        <div class="product">
+          <a href="oneitem.html">
+            <img src="images/usa-girl.jpg" alt="Футболка USA" />
+          </a>
+          <div class="product-name">Футболка USA</div>
+        </div>
+
+        <div class="product">
+          <a href="oneitem.html">
+            <img src="images/sport-top.jpg" alt="Топ" />
+          </a>
+          <div class="product-name">Куртка в клетку</div>
+        </div>
+
+        <div class="product">
+          <a href="oneitem.html">
+            <img src="images/sweatshirt.jpg" alt="Свитшот Sweet Shot" />
+          </a>
+          <div class="product-name">Свитшот Sweet Shot</div>
+        </div>
+
+        <div class="product">
+          <a href="oneitem.html">
+            <img src="images/usa-girl.jpg" alt="Футболка USA" />
+          </a>
+          <div class="product-name">Футболка USA</div>
+        </div>
+
+        <div class="product">
+          <a href="oneitem.html">
+            <img src="images/sport-top.jpg" alt="Топ" />
+          </a>
+          <div class="product-name">Куртка в клетку</div>
+        </div>
+
+        <div class="product">
+          <a href="oneitem.html">
+            <img src="images/sweatshirt.jpg" alt="Свитшот Sweet Shot" />
+          </a>
+          <div class="product-name">Свитшот Sweet Shot</div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <button class="active">1</button>
+        <button>2</button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__nav">
+          <a href="index.html" class="nav__link">Главная</a>
+          <a href="shop.html" class="nav__link">Магазин</a>
+          <a href="aboutbrand.html" class="nav__link">О бренде</a>
+          <a href="contacts.html" class="nav__link">Контакты</a>
+        </div>
+        <div class="footer__info">
+          <p>© Все права защищены</p>
+          <div class="footer__socials">
+            <a href="#">
+              <img
+                src="images/facebook.png"
+                class="sotial_icon"
+                alt="Facebook"
+              />
+            </a>
+            <a href="#">
+              <img src="images/instagram.png" class="sotial_icon" alt="IG" />
+            </a>
+            <a href="#">
+              <img src="images/twitter.png" class="sotial_icon" alt="Twitter" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="burger.js"></script>
+  </body>
+</html>
